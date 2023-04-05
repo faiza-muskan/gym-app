@@ -26,7 +26,7 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <img className=" w-[669px] h-auto" src={bowl} alt="food" />
+          <img className=" w-[600px] h-auto" src={bowl} alt="food" />
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ import waiter from "../images/Waiters-rafiki 1.png";
 const About = () => {
   return (
     <>
-      <section className="container my-20 px-12">
+      <section className="container my-20">
         <div className=" w-[50%] m-auto text-center">
           <h2 className=" text-[#EB0029] font-bold tracking-wider">
             WHAT WE SERVE
