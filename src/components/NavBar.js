@@ -36,7 +36,7 @@ const Navbar = () => {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#EB0029]"
         >
-          Contract
+          Contact
         </li>
       </ul>
       <div className=" flex flex-row gap-7 items-center">
