@@ -3,8 +3,8 @@ import bowl from "../images/foodBowl.png";
 
 const Hero = () => {
   return (
-    <section className="min-h=[85vh] lg:min-h-[78vh]">
-      <div className="container flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center lg:gap-x-12 pt-20   my-20 px-12">
+    <section>
+      <div className="container flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center lg:gap-x-12 pt-20 my-20 px-12">
         <div className="flex-1 text-left ">
           <h1 className=" text-6xl font-bold text-gray-900 leading-[65px]">
             Claim Best Offer
