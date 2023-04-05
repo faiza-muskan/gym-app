@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        " container flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50"
+        " container flex flex-row bg-transparent items-center justify-between py-8 px-12 fixed top-0 left-0 right-0 w-full z-50"
       }
     >
       <Link to="/">
@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className=" flex flex-row gap-7 items-center">
         <FiSearch className=" text-2xl text-gray-700 cursor-pointer" />
         <FiShoppingBag className=" text-2xl text-gray-700 cursor-pointer" />
-        <button className="flex gap-2 items-center bg-[#EB0029] text-white px-7 py-3 rounded-full">
+        <button className="flex gap-2 items-center bg-[#EB0029] text-white px-7 py-3 rounded-full hover:bg-[#750518]">
           <FiLogIn />
           Login
         </button>
