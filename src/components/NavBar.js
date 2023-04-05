@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav
       className={
-        " container flex flex-row bg-transparent items-center justify-between py-8 px-12 fixed top-0 left-0 right-0 w-full z-50"
+        " container flex flex-row items-center justify-between py-4 px-12 fixed top-0 left-0 right-0 w-full z-50 bg-[#ffffffc9]"
       }
     >
       <Link to="/">
