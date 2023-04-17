@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import UseHttp from "../hooks/Use-Http";
 import DisplayFood from "./DisplayFood";
+import { Carousel } from "@trendyol-js/react-carousel";
 
 const MenuList = () => {
   const { sendRequest } = UseHttp();
@@ -70,9 +71,9 @@ const MenuList = () => {
           &nbsp;Desserts
         </button>
       </div>
-      <div className=" flex min-h-screen items-center justify-center ml-2 pl-2">
+      <Carousel show={3.5} slide={3} swipeOn={true}>
         <DisplayFood displayData={display} />
-      </div>
+      </Carousel>
     </div>
   );
 };
