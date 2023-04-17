@@ -1,40 +1,68 @@
 import React from "react";
-import rectangle from "../images/Rectangle 4.png";
 import chef from "../images/chef.png";
 import Slider from "react-slick";
 
 const Review = () => {
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#EB0029",
+          borderRadius: "50%",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#EB0029",
+          borderRadius: "50%",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slideToshow: 1,
     slideToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
-    <section className="my-5 px-12 flex flex-row justify-between relative">
+    <section className="container my-8 py-8 px-12 flex flex-row justify-between items-center">
       <div className=" mx-5 px-5">
         <img
-          className=" absolute w-[330px] top-0"
-          src={rectangle}
-          alt="rectangle background"
-        />
-        <img
-          className=" absolute w-[420px] h-auto left-11 bottom-[-193px]"
+          className=" w-[550px] h-auto"
           src={chef}
           alt="chef holding the dish"
         />
       </div>
-      <div className=" container text-center w-[50%]">
+      <div className="text-center w-[50%] ">
         <div>
           <h2 className=" text-[#EB0029] font-semibold">What They Say</h2>
-          <h1 className=" font-extrabold text-2xl my-2 py-2">
-            What Our Customers Say About Us
+          <h1 className=" font-bold text-4xl my-2 py-2">
+            What Our Customers <br />
+            Say About Us
           </h1>
           <Slider {...settings}>
             <div>
-              <p>
+              <p className=" text-xl">
                 "There are painters who transform the sun to a yellow spot,
                 <br /> but there are others who with the help of their art and
                 their
@@ -43,7 +71,7 @@ const Review = () => {
               </p>
             </div>
             <div>
-              <p>
+              <p className=" text-xl">
                 There are painters who transform the sun to a yellow spot,
                 <br /> but there are others who with the help of their art and
                 their
@@ -52,7 +80,7 @@ const Review = () => {
               </p>
             </div>
             <div>
-              <p>
+              <p className=" text-xl">
                 There are painters who transform the sun to a yellow spot,
                 <br /> but there are others who with the help of their art and
                 their
