@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import UseHttp from "../hooks/Use-Http";
 import DisplayFood from "./DisplayFood";
-import { Carousel } from "@trendyol-js/react-carousel";
 
 const MenuList = () => {
   const { sendRequest } = UseHttp();
@@ -18,22 +17,22 @@ const MenuList = () => {
     );
   };
 
-  // useEffect(() => {
-  //   const loadData = (data) => {
-  //     const response = data.results;
-  //     setDisplay(response);
-  //   };
+  useEffect(() => {
+    const loadData = (data) => {
+      const response = data.results;
+      setDisplay(response);
+    };
 
-  //   sendRequest(
-  //     {
-  //       url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=10&apiKey=4ba25e804c0343df95bdd6787954c236`,
-  //     },
-  //     loadData
-  //   );
-  // }, [sendRequest, query]);
+    sendRequest(
+      {
+        url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=10&apiKey=4ba25e804c0343df95bdd6787954c236`,
+      },
+      loadData
+    );
+  }, [sendRequest, query]);
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row justify-between items-center">
       <div className=" flex flex-col items-start m-3 pt-4 justify-center">
         <button
           onClick={() => filteredMenu("burger")}
@@ -71,9 +70,9 @@ const MenuList = () => {
           &nbsp;Desserts
         </button>
       </div>
-      <Carousel show={3.5} slide={3} swipeOn={true}>
+      <div className="w-[70%] pt-20">
         <DisplayFood displayData={display} />
-      </Carousel>
+      </div>
     </div>
   );
 };
