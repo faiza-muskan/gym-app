@@ -1,5 +1,8 @@
 import React from "react";
 import chef from "../images/chef.png";
+import review1 from "../images/review-1.avif";
+import review2 from "../images/review-2.avif";
+import review3 from "../images/review-3.avif";
 import Slider from "react-slick";
 
 const Review = () => {
@@ -69,6 +72,15 @@ const Review = () => {
                 <br />
                 intelligence, transform a yellow spot into the sun".
               </p>
+              <div className="flex flex-row items-center ml-[5rem] mt-10">
+                <div className="w-16 h-16 overflow-hidden rounded-full">
+                  <img src={review1} alt="profile 1" className="w-auto" />
+                </div>
+                <div className="ml-4 text-left">
+                  <h1 className="text-xl font-semibold"> Theresa Jorden</h1>
+                  <h2 className=" text-gray-500">Food Enthusiat</h2>
+                </div>
+              </div>
             </div>
             <div>
               <p className=" text-xl">
@@ -78,6 +90,15 @@ const Review = () => {
                 <br />
                 intelligence, transform a yellow spot into the sun.
               </p>
+              <div className="flex flex-row items-center ml-[5rem] mt-10">
+                <div className="w-16 h-16 overflow-hidden rounded-full">
+                  <img src={review2} alt="profile 2" className="w-auto" />
+                </div>
+                <div className="ml-4 text-left">
+                  <h1 className="text-xl font-semibold"> Theresa Jorden</h1>
+                  <h2 className=" text-gray-500">Food Enthusiat</h2>
+                </div>
+              </div>
             </div>
             <div>
               <p className=" text-xl">
@@ -87,6 +108,15 @@ const Review = () => {
                 <br />
                 intelligence, transform a yellow spot into the sun.
               </p>
+              <div className="flex flex-row items-center ml-[5rem] mt-10">
+                <div className="w-16 h-16 overflow-hidden rounded-full">
+                  <img src={review3} alt="profile 3" className="w-auto" />
+                </div>
+                <div className="ml-4 text-left">
+                  <h1 className="text-xl font-semibold"> Theresa Jorden</h1>
+                  <h2 className=" text-gray-500">Food Enthusiat</h2>
+                </div>
+              </div>
             </div>
           </Slider>
         </div>
