@@ -3,7 +3,7 @@ import app from "../images/app.png";
 
 const Download = () => {
   return (
-    <section className=" bg-[#ffddcc54] container my-8 py-8 px-12 rounded-2xl mx-14 ">
+    <section className=" bg-[#ffddcc54] container my-8 py-8 px-8 mr-12 rounded-2xl ">
       <div className=" flex flex-row justify-around relative top-9 ">
         <div className=" mx-4 px-4 py-7">
           <h2 className=" text-[#EB0029] -tracking-tighter font-medium text-lg my-3 py-3 ">
