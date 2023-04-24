@@ -30,7 +30,7 @@ const Navbar = () => {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#EB0029]"
         >
-          Menu
+          <a href="#menu">Menu</a>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
@@ -40,7 +40,15 @@ const Navbar = () => {
         </li>
       </ul>
       <div className=" flex flex-row gap-7 items-center">
-        <FiSearch className=" text-2xl text-gray-700 cursor-pointer" />
+        <div className=" border-2 border-stone-500 flex flex-row px-4 py-1 rounded-full ">
+          <input
+            className="focus:outline-none"
+            type="text"
+            placeholder="search"
+          />
+          <FiSearch className=" text-2xl text-gray-600 cursor-pointer" />
+        </div>
+
         <FiShoppingBag className=" text-2xl text-gray-700 cursor-pointer" />
         <button className="flex gap-2 items-center bg-[#EB0029] text-white px-7 py-3 rounded-full hover:bg-[#750518]">
           <FiLogIn />
