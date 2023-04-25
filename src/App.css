@@ -1,3 +1,4 @@
+@import "./styles/slick-overrides.css";
 .App {
   text-align: center;
 }

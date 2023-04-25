@@ -1,5 +1,35 @@
 import React from "react";
+import MenuItems from "./MenuItems";
 import Slider from "react-slick";
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={`${className} bg-[#E0E0E0] rounded-full mx-3 p-5 hover:bg-[#a3a3a3]`}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <HiOutlineChevronRight />
+    </button>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={`${className} bg-[#EB0029] rounded-full mx-3 p-5 text-white hover:bg-[#8c0c22]`}
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    >
+      <HiOutlineChevronLeft />
+    </button>
+  );
+}
+
+const price = "£20";
 
 const DisplayFood = (props) => {
   const settings = {
@@ -8,42 +38,19 @@ const DisplayFood = (props) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
-
-  console.log(props.displayData);
-
   return (
     <Slider {...settings}>
       {props.displayData.map((items) => (
-        <div key={items.id} className="border shadow-lg rounded-lg">
-          <img
-            src={items.image}
-            alt={items.title}
-            className="w-[300px] h-[300px] rounded-xl"
-          />
-          <div className="px-2 py-4">
-            <h1 className="text-xl font-semibold">{items.title}</h1>
-            <p>£20</p>
-            <div className="mt-5 mb-2">
-              <label className="mr-[1rem]" htmlFor="amount">
-                Amount
-              </label>
-              <input
-                className=" border-[1px] border-neutral-300 p-1 rounded-lg"
-                type="number"
-                min="1"
-                max="5"
-                step="1"
-                defaultValue="1"
-              />
-            </div>
-            <div>
-              <button className=" bg-[#eb0029] py-2 px-6 rounded-full text-white ">
-                Order now
-              </button>
-            </div>
-          </div>
-        </div>
+        <MenuItems
+          title={items.title}
+          id={items.id}
+          key={items.id}
+          image={items.image}
+          price={price}
+        />
       ))}
     </Slider>
   );
