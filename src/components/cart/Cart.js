@@ -1,20 +1,41 @@
 import React from "react";
 import Modal from "../../modal/Modal";
+import Cartitems from "./Cartitems";
 import { uiActions } from "../../store/ui-slice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
   const dispatch = useDispatch();
+  const cartItemsState = useSelector((state) => state.cart.items);
+  const totalPrice = useSelector((state) => state.cart.totalPrice);
+
+  console.log(totalPrice);
 
   const closeButtonHandler = () => {
     dispatch(uiActions.close());
   };
 
+  const cartItems = (
+    <ul className=" overflow-auto max-h-[20rem]">
+      {cartItemsState.map((items) => (
+        <Cartitems
+          id={items.id}
+          key={items.id}
+          title={items.title}
+          quantity={items.quantity}
+          total={items.totalPrice}
+          price={items.price}
+        />
+      ))}
+    </ul>
+  );
+
   return (
     <Modal>
+      {cartItems}
       <div className=" flex flex-row justify-between items-center m-4">
         <span>Total Amount</span>
-        <span>£0.00</span>
+        <span>£{totalPrice}</span>
       </div>
       <div className=" text-right ">
         <button

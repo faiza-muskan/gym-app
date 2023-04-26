@@ -1,5 +1,5 @@
 import React from "react";
-import MenuItems from "./MenuItems";
+import MenuItem from "./MenuItem";
 import Slider from "react-slick";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-const price = "£20";
+const price = 20;
 
 const DisplayFood = (props) => {
   const settings = {
@@ -44,7 +44,7 @@ const DisplayFood = (props) => {
   return (
     <Slider {...settings}>
       {props.displayData.map((items) => (
-        <MenuItems
+        <MenuItem
           title={items.title}
           id={items.id}
           key={items.id}
