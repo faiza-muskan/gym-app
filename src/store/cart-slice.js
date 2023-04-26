@@ -20,8 +20,9 @@ const cartSlice = createSlice({
           title: newItem.title,
         });
       } else {
-        sameItems.quantity++;
+        // sameItems.quantity++;
         sameItems.totalPrice = sameItems.totalPrice + newItem.price;
+        sameItems.quantity = sameItems.quantity + newItem.quantity;
       }
     },
     removeItems(state, action) {

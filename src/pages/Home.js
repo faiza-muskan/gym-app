@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 import Review from "../components/Review";
 import Download from "../components/Download";
 import Footer from "../components/Footer";
