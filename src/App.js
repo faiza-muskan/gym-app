@@ -4,6 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Root from "./pages/Root";
 import ContactPage from "./pages/ContactPage";
+import ServicesPage from "./pages/ServicesPage";
 
 const route = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const route = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "/contact", element: <ContactPage /> },
+      { path: "/services", element: <ServicesPage /> },
     ],
   },
 ]);
