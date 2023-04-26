@@ -27,7 +27,7 @@ const Navbar = () => {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#EB0029]"
         >
-          Home
+          <Link to={"/"}>Home</Link>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
@@ -37,7 +37,7 @@ const Navbar = () => {
         </li>
         <li
           style={{ transition: "all 0.3s" }}
-          className=" cursor-pointer hover:text-[#EB0029]"
+          className=" cursor-pointer hover:text-[#EB0029] scroll-smooth"
         >
           <a href="#menu">Menu</a>
         </li>
@@ -45,7 +45,7 @@ const Navbar = () => {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#EB0029]"
         >
-          Contact
+          <Link to={"/contact"}> Contact</Link>
         </li>
       </ul>
       <div className=" flex flex-row gap-7 items-center">
