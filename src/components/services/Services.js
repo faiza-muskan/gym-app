@@ -12,9 +12,9 @@ const Services = () => {
         <img
           src={burger}
           alt="burger"
-          className="w-[100%] h-[35rem] overflow-hidden object-cover opacity-80 shadow-2xl"
+          className="w-[100%] h-[35rem] overflow-hidden object-cover shadow-2xl"
         />
-        <h1 className="absolute top-[50%] left-[50%] text-white text-4xl">
+        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
           Services
         </h1>
       </div>

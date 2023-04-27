@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/logo.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { uiActions } from "../store/ui-slice";
-import { FiSearch, FiShoppingBag, FiLogIn } from "react-icons/fi";
+import { FiShoppingBag, FiLogIn } from "react-icons/fi";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const Navbar = () => {
           style={{ transition: "all 0.3s" }}
           className=" cursor-pointer hover:text-[#EB0029] scroll-smooth"
         >
-          <a href="#menu">Menu</a>
+          <Link to={"/menu"}>Menu</Link>
         </li>
         <li
           style={{ transition: "all 0.3s" }}
@@ -45,14 +45,6 @@ const Navbar = () => {
         </li>
       </ul>
       <div className=" flex flex-row gap-7 items-center">
-        {/* <div className=" border-2 border-stone-500 flex flex-row px-4 py-1 rounded-full ">
-          <input
-            className="focus:outline-none"
-            type="text"
-            placeholder="search"
-          />
-          <FiSearch className=" text-2xl text-gray-600 cursor-pointer" />
-        </div> */}
         <FiShoppingBag
           className=" text-2xl text-gray-700 cursor-pointer"
           onClick={toggleCartHandler}
