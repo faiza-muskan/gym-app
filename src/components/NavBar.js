@@ -14,11 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={
-        " container flex flex-row items-center justify-between py-4 px-12 fixed top-0 left-0 right-0 w-full z-10 bg-[#ffffffc9]"
-      }
-    >
+    <nav className=" flex flex-row items-center justify-between py-4 px-32 fixed top-0 left-0 right-0  z-10 w-full bg-[#ffffffc9]">
       <Link to="/">
         <img className=" w-12 h-auto" src={logo} alt="logo" />
       </Link>
@@ -61,7 +57,7 @@ const Navbar = () => {
           className=" text-2xl text-gray-700 cursor-pointer"
           onClick={toggleCartHandler}
         />
-        <div className=" bg-[#EB0029] text-white rounded-full px-1 text-xs absolute right-[190px] top-[21px]">
+        <div className=" bg-[#EB0029] text-white rounded-full px-1 text-xs absolute right-[270px] top-[21px]">
           {cartQuantity}
         </div>
         <button className="flex gap-2 items-center bg-[#EB0029] text-white px-7 py-3 rounded-full hover:bg-[#750518]">
