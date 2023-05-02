@@ -12,7 +12,7 @@ const Home = () => {
   const showCart = useSelector((state) => state.ui.cartIsVisible);
   const closeCart = useSelector((state) => state.ui.cartIsVisible);
   return (
-    <div className="container sm:mx-640px md:mx-640px lg:mx-640px py-4 px-12">
+    <div className="container py-4 px-12">
       <Hero />
       {showCart && closeCart && <Cart />}
       <About />

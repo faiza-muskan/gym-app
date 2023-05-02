@@ -4,9 +4,9 @@ import bowl from "../images/foodBowl.png";
 const Hero = () => {
   return (
     <section>
-      <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center lg:gap-x-12 pt-20 my-20 px-12">
+      <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center pt-20 my-20 px-12">
         <div className="flex-1 text-left ">
-          <h1 className=" text-6xl font-bold text-gray-900 leading-[65px]">
+          <h1 className="xl:text-5xl lg:text-xl  font-bold text-gray-900 leading-[65px]">
             Claim Best Offer
             <br /> On Fast{" "}
             <span className="drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-[#EB0029] font-serif">
@@ -17,7 +17,7 @@ const Hero = () => {
               Restaurants
             </span>
           </h1>
-          <p className="my-6 text-lg">
+          <p className="my-6 xl:text-base lg:text-sm">
             Our job is to filling your tummy with delicious food
             <br /> and with delicious
           </p>
@@ -26,7 +26,11 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <img className=" w-[600px] h-auto" src={bowl} alt="food" />
+          <img
+            className="xl:w-[450px] md:w-[300px] h-auto"
+            src={bowl}
+            alt="food"
+          />
         </div>
       </div>
     </section>
