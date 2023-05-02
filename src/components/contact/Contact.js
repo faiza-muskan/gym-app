@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <section className="h-[100vh] bg-gradient-to-r from-white to-[#ef98a7] flex flex-col justify-center">
-      <div className=" container flex flex-row items-center justify-between h-[800px] bg-white rounded-3xl md:h-[600px] md:w-[900px]">
+      <div className=" container flex flex-row items-center justify-between lg:h-[700px] lg:w-[1000px] bg-white rounded-3xl md:h-[600px] md:w-[900px]">
         <div>
           <ConatctForm addContact={contactHandler} />
         </div>
@@ -28,7 +28,7 @@ const Contact = () => {
           <img
             src={food}
             alt="food"
-            className=" h-[800px] rounded-r-xl md:h-[600px]"
+            className=" h-[800px] rounded-r-xl md:h-[600px] lg:h-[700px]"
           />
         </div>
       </div>
