@@ -3,6 +3,7 @@ import chef from "../images/chef.png";
 import review1 from "../images/review-1.avif";
 import review2 from "../images/review-2.avif";
 import review3 from "../images/review-3.avif";
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 import Slider from "react-slick";
 
 const Review = () => {
@@ -10,15 +11,15 @@ const Review = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`${className} bg-[#EB0029] rounded-full mx-3 p-4 hover:bg-[#8c0c22] absolute right-[-40px] top-[45px] `}
         style={{
           ...style,
           display: "block",
-          background: "#EB0029",
-          borderRadius: "50%",
         }}
         onClick={onClick}
-      />
+      >
+        <HiOutlineChevronRight className=" text-white z-10 text-lg absolute top-2 left-2" />
+      </div>
     );
   }
 
@@ -26,15 +27,15 @@ const Review = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`${className} bg-[#EB0029] rounded-full mx-3 p-4 hover:bg-[#8c0c22] absolute left-[-40px] top-[45px]`}
         style={{
           ...style,
           display: "block",
-          background: "#EB0029",
-          borderRadius: "50%",
         }}
         onClick={onClick}
-      />
+      >
+        <HiOutlineChevronLeft className=" text-white z-10 text-lg absolute top-2 left-2" />
+      </div>
     );
   }
   const settings = {
@@ -43,8 +44,8 @@ const Review = () => {
     speed: 500,
     slideToshow: 1,
     slideToScroll: 1,
-    nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow />,
   };
 
   return (

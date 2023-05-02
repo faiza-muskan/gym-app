@@ -6,26 +6,26 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <button
-      className={`${className} bg-[#E0E0E0] rounded-full mx-3 p-5 hover:bg-[#a3a3a3]`}
+    <div
+      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute top-[-115px] right-0`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <HiOutlineChevronRight />
-    </button>
+      <HiOutlineChevronRight className=" text-white z-10 text-4xl absolute top-4 left-4" />
+    </div>
   );
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <button
-      className={`${className} bg-[#EB0029] rounded-full mx-3 p-5 text-white hover:bg-[#8c0c22]`}
+    <div
+      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute top-[-115px] left-[590px]`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <HiOutlineChevronLeft />
-    </button>
+      <HiOutlineChevronLeft className=" text-white z-10 text-4xl absolute top-4 left-4" />
+    </div>
   );
 }
 
