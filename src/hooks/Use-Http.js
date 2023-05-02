@@ -1,7 +1,9 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 const UseHttp = () => {
+  const [isloading, setIsloading] = useState(false);
   const sendRequest = useCallback(async (reqConfiq, applyData) => {
+    setIsloading(true);
     try {
       const response = await fetch(reqConfiq.url, {
         method: reqConfiq.method ? reqConfiq.method : "GET",
@@ -12,6 +14,7 @@ const UseHttp = () => {
         throw new Error("something went wrong!!");
       }
       const data = await response.json();
+      setIsloading(false);
       applyData(data);
     } catch (error) {
       console.log(error.message);
@@ -19,6 +22,7 @@ const UseHttp = () => {
   }, []);
   return {
     sendRequest: sendRequest,
+    loading: isloading,
   };
 };
 

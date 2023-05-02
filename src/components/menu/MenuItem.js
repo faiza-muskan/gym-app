@@ -11,7 +11,7 @@ const MenuItem = (props) => {
   const addToCartHandler = (amount) => {
     dispatch(
       cartAction.addItems({
-        amount: amount,
+        quantity: amount,
         id,
         title,
         price,

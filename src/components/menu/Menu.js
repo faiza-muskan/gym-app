@@ -1,6 +1,5 @@
 import React from "react";
 import MenuList from "./MenuList";
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 
 const Menu = () => {
   return (
@@ -12,14 +11,6 @@ const Menu = () => {
             Menu That Always
             <br /> Makes You Fall In Love
           </h1>
-        </div>
-        <div className=" text-2xl">
-          <button className=" bg-[#E0E0E0] rounded-full mx-3 p-5 hover:bg-[#a3a3a3]">
-            <HiOutlineChevronLeft />
-          </button>
-          <button className=" bg-[#EB0029] rounded-full mx-3 p-5 text-white hover:bg-[#8c0c22]">
-            <HiOutlineChevronRight />
-          </button>
         </div>
       </div>
       <div>
