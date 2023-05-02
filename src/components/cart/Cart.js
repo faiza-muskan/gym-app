@@ -9,8 +9,6 @@ const Cart = () => {
   const cartItemsState = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
-  console.log(totalPrice);
-
   const closeButtonHandler = () => {
     dispatch(uiActions.close());
   };

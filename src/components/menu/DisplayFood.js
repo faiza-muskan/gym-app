@@ -7,7 +7,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute top-[-115px] right-0`}
+      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute lg:top-[-115px] lg:left-[]`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
@@ -20,7 +20,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute top-[-115px] left-[590px]`}
+      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute  lg:top-[-115px] lg:left-[440px]`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >

@@ -13,7 +13,6 @@ const MenuForm = (props) => {
     }
 
     props.addToCart(amount);
-    console.log(amount);
   };
 
   return (

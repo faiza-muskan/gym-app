@@ -12,16 +12,15 @@ const Menu = () => {
   const [query, setQuery] = useState(searchParams.get("query"));
   const { sendRequest, loading } = UseHttp();
 
-  // const loadData = (data) => {
-  //   const response = data.results;
-  //   setResult(response);
-  //   console.log(response);
-  // };
+  const loadData = (data) => {
+    const response = data.results;
+    setResult(response);
+  };
 
   // const fetchData = useCallback(async () => {
   //   sendRequest(
   //     {
-  //       url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=10&apiKey=4ba25e804c0343df95bdd6787954c236`,
+  //       url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=12&apiKey=4ba25e804c0343df95bdd6787954c236`,
   //     },
   //     loadData
   //   );
@@ -30,16 +29,6 @@ const Menu = () => {
   // useEffect(() => {
   //   fetchData();
   // }, [fetchData]);
-
-  // console.log(query);
-
-  // const searchHandler = (e) => {
-  //   const newQuery = e.target.value;
-  //   setQuery(newQuery);
-  //   setSearchParams({
-  //     query: newQuery,
-  //   });
-  // };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -67,7 +56,10 @@ const Menu = () => {
             placeholder="Search"
             className=" rounded-full py-3 px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-24 w-[40%]"
           />
-          <button className=" absolute top-1/2 left-[66%] -translate-x-1/2 -translate-y-1/2 text-white mt-24 bg-[#EB0029] px-6 py-2.5 rounded-full text-sm">
+          <button
+            type="submit"
+            className=" absolute top-1/2 left-[66%] -translate-x-1/2 -translate-y-1/2 text-white mt-24 bg-[#EB0029] px-6 py-2.5 rounded-full text-sm"
+          >
             {loading ? <Loader /> : "search"}
           </button>
         </form>
