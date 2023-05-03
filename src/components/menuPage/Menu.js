@@ -111,11 +111,11 @@ const Menu = () => {
             value={query}
             ref={inputRef}
             placeholder="Search"
-            className=" rounded-full py-3 px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-24 xl:w-[40%] 2xl:w-[27%]"
+            className=" rounded-full py-3 px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-24 xl:w-[40%] 2xl:w-[27%] lg:w-[45%]"
           />
           <button
             type="submit"
-            className=" absolute top-1/2 xl:right-[27%] 2xl:right-[35%] -translate-x-1/2 -translate-y-1/2 text-white mt-24 bg-[#EB0029] px-6 py-2.5 rounded-full text-sm"
+            className=" absolute top-1/2 xl:right-[27%] 2xl:right-[35%] lg:right-[24.5%] -translate-x-1/2 -translate-y-1/2 text-white mt-24 bg-[#EB0029] px-6 py-2.5 rounded-full text-sm"
           >
             {loading ? <Loader /> : "search"}
           </button>

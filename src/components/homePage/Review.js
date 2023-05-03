@@ -60,17 +60,15 @@ const Review = () => {
       <div className="text-center w-[50%] ">
         <div>
           <h2 className=" text-[#EB0029] font-semibold">What They Say</h2>
-          <h1 className=" font-bold text-4xl my-2 py-2">
+          <h1 className=" font-bold 2xl:text-4xl xl:text-3xl lg:text-2xl my-2 py-2">
             What Our Customers <br />
             Say About Us
           </h1>
           <Slider {...settings}>
             <div>
-              <p className=" text-xl">
-                "There are painters who transform the sun to a yellow spot,
-                <br /> but there are others who with the help of their art and
-                their
-                <br />
+              <p className=" 2xl:text-xl xl:text-lg lg:text-base">
+                "There are painters who transform the sun to a yellow spot, but
+                there are others who with the help of their art and their
                 intelligence, transform a yellow spot into the sun".
               </p>
               <div className="flex flex-row items-center ml-[5rem] mt-10">
@@ -84,11 +82,9 @@ const Review = () => {
               </div>
             </div>
             <div>
-              <p className=" text-xl">
-                There are painters who transform the sun to a yellow spot,
-                <br /> but there are others who with the help of their art and
-                their
-                <br />
+              <p className=" 2xl:text-xl xl:text-lg lg:text-base">
+                There are painters who transform the sun to a yellow spot, but
+                there are others who with the help of their art and their
                 intelligence, transform a yellow spot into the sun.
               </p>
               <div className="flex flex-row items-center ml-[5rem] mt-10">
@@ -102,11 +98,9 @@ const Review = () => {
               </div>
             </div>
             <div>
-              <p className=" text-xl">
-                There are painters who transform the sun to a yellow spot,
-                <br /> but there are others who with the help of their art and
-                their
-                <br />
+              <p className=" 2xl:text-xl xl:text-lg lg:text-base">
+                There are painters who transform the sun to a yellow spot, but
+                there are others who with the help of their art and their
                 intelligence, transform a yellow spot into the sun.
               </p>
               <div className="flex flex-row items-center ml-[5rem] mt-10">
@@ -114,7 +108,7 @@ const Review = () => {
                   <img src={review3} alt="profile 3" className="w-auto" />
                 </div>
                 <div className="ml-4 text-left">
-                  <h1 className="text-xl font-semibold"> Theresa Jorden</h1>
+                  <h1 className="font-semibold">Theresa Jorden</h1>
                   <h2 className=" text-gray-500">Food Enthusiat</h2>
                 </div>
               </div>

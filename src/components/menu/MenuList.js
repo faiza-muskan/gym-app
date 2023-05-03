@@ -91,35 +91,35 @@ const MenuList = () => {
       <div className=" flex flex-col items-start m-3 pt-4 justify-center">
         <button
           onClick={() => filteredMenu("burger")}
-          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029]"
+          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029] 2xl:text-xl xl:text-lg lg:text-base"
         >
           <span className="bg-white rounded-full p-2">🍔</span>
           &nbsp;Burger
         </button>
         <button
           onClick={() => filteredMenu("pizza")}
-          className="  m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029]"
+          className="  m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029] 2xl:text-xl xl:text-lg lg:text-base"
         >
           <span className="bg-white rounded-full p-2">🍕</span>
           &nbsp;Pizza
         </button>
         <button
           onClick={() => filteredMenu("sandwich")}
-          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029]"
+          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029] 2xl:text-xl xl:text-lg lg:text-base"
         >
           <span className="bg-white rounded-full p-2">🥪</span>
           &nbsp;Sandwich
         </button>
         <button
           onClick={() => filteredMenu("drinks")}
-          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029]"
+          className=" m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029] 2xl:text-xl xl:text-lg lg:text-base"
         >
           <span className="bg-white rounded-full p-2">🥤</span>
           &nbsp;Drinks
         </button>
         <button
           onClick={() => filteredMenu("desserts")}
-          className="  m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029]"
+          className="  m-2 p-2 text-xl font-medium hover:bg-[#EB0029] hover:text-white rounded-full pr-20 py-4 focus:text-white focus:bg-[#eb0029] 2xl:text-xl xl:text-lg lg:text-base"
         >
           <span className="bg-white rounded-full p-2">🧁</span>
           &nbsp;Desserts

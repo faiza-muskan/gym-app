@@ -7,11 +7,11 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute lg:top-[-115px] lg:left-[]`}
+      className={`${className} bg-[#EB0029] rounded-full mx-3 2xl:p-8 xl:p-7 lg:p-6 hover:bg-[#8c0c22] absolute 2xl:top-[-115px] xl:top-[-115px] lg:top-[-115px] `}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <HiOutlineChevronRight className=" text-white z-10 text-4xl absolute top-4 left-4" />
+      <HiOutlineChevronRight className=" text-white z-10 2xl:text-4xl xl:text-3xl lg:text-3xl absolute 2xl:top-4 lg:top-3 2xl:left-4 xl:text-3 lg:left-3" />
     </div>
   );
 }
@@ -20,11 +20,11 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-[#EB0029] rounded-full mx-3 p-8 hover:bg-[#8c0c22] absolute  lg:top-[-115px] lg:left-[440px]`}
+      className={`${className} bg-[#EB0029] rounded-full mx-3 2xl:p-8 xl:p-7 lg:p-6 hover:bg-[#8c0c22] absolute  2xl:top-[-115px] xl:top-[-115px] lg:top-[-115px] 2xl:left-[780px] xl:left-[620px] lg:left-[470px]`}
       style={{ ...style, display: "block" }}
       onClick={onClick}
     >
-      <HiOutlineChevronLeft className=" text-white z-10 text-4xl absolute top-4 left-4" />
+      <HiOutlineChevronLeft className=" text-white z-10 2xl:text-4xl xl:text-3xl lg:text-3xl absolute  2xl:top-4 lg:top-3  lg:left-3" />
     </div>
   );
 }
