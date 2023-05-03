@@ -44,10 +44,12 @@ const ConatctForm = (props) => {
 
   return (
     <form
-      className=" max-w-[39rem] md:max-w-[29rem]"
+      className=" 2xl:max-w-[31rem] xl:max-w-[27rem]"
       onSubmit={onSubmitHandler}
     >
-      <h1 className=" text-center text-4xl mb-8">Contact Us</h1>
+      <h1 className=" text-center text-4xl 2xl:mb-8 xl:mb-4 xl:mt-8">
+        Contact Us
+      </h1>
       <input
         value={enteredName}
         onChange={nameHandler}
