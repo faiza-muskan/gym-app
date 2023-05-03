@@ -12,15 +12,15 @@ const Menu = () => {
   const [query, setQuery] = useState(searchParams.get("query"));
   const { sendRequest, loading } = UseHttp();
 
-  const loadData = (data) => {
-    const response = data.results;
-    setResult(response);
-  };
+  // const loadData = (data) => {
+  //   const response = data.results;
+  //   setResult(response);
+  // };
 
   // const fetchData = useCallback(async () => {
   //   sendRequest(
   //     {
-  //       url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=12&apiKey=4ba25e804c0343df95bdd6787954c236`,
+  //       url: `https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=10&apiKey=4ba25e804c0343df95bdd6787954c236`,
   //     },
   //     loadData
   //   );

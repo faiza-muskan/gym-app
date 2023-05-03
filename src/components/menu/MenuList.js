@@ -62,11 +62,6 @@ const MenuList = () => {
     ]);
   }, []);
 
-  // const URL =
-  //   "https://api.spoonacular.com/recipes/complexSearch?query=${query}&maxFat=25&number=10&apiKey=4ba25e804c0343df95bdd6787954c236";
-
-  // const dummyURL = "https://api.jsonbin.io/v3/qs/644aabd39d312622a3535ad9";
-
   const filterMenu = ["burger", "pizza", "sandwich", "drinks", "desserts"];
 
   const filteredMenu = (value) => {
