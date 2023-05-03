@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.jpg";
+import logo from "../../images/logo.jpg";
 import { useDispatch, useSelector } from "react-redux";
-import { uiActions } from "../store/ui-slice";
+import { uiActions } from "../../store/ui-slice";
 import { FiShoppingBag, FiLogIn } from "react-icons/fi";
 
 const Navbar = () => {

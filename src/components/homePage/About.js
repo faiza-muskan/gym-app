@@ -1,7 +1,7 @@
 import React from "react";
-import orderLogo from "../images/Order food-pana 1.png";
-import takeAway from "../images/Take Away-rafiki 1.png";
-import waiter from "../images/Waiters-rafiki 1.png";
+import orderLogo from "../../images/Order food-pana 1.png";
+import takeAway from "../../images/Take Away-rafiki 1.png";
+import waiter from "../../images/Waiters-rafiki 1.png";
 
 const About = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import chef from "../images/chef.png";
-import review1 from "../images/review-1.avif";
-import review2 from "../images/review-2.avif";
-import review3 from "../images/review-3.avif";
+import chef from "../../images/chef.png";
+import review1 from "../../images/review-1.avif";
+import review2 from "../../images/review-2.avif";
+import review3 from "../../images/review-3.avif";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 import Slider from "react-slick";
 

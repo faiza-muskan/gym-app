@@ -1,5 +1,5 @@
 import React from "react";
-import bowl from "../images/foodBowl.png";
+import bowl from "../../images/foodBowl.png";
 
 const Hero = () => {
   return (

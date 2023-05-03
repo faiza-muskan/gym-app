@@ -1,5 +1,5 @@
 import React from "react";
-import app from "../images/app.png";
+import app from "../../images/app.png";
 
 const Download = () => {
   return (
