@@ -108,7 +108,6 @@ const Menu = () => {
         <form onSubmit={onSubmit}>
           <input
             type="search"
-            value={query}
             ref={inputRef}
             placeholder="Search"
             className=" rounded-full py-3 px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-24 xl:w-[40%] 2xl:w-[27%] lg:w-[45%]"
